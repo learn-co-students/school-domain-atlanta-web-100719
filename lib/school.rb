@@ -27,6 +27,6 @@ class School
     # and convert back to hash
     @roster.map do |grade, names|
       [grade, names.sort]
-    end.sort.to_h
+    end.to_h
   end
 end
