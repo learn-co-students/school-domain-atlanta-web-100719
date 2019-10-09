@@ -23,8 +23,7 @@ class School
 
   def sort
     # map returns array with sorted names
-    # add additional .sort.to_h to sort the keys 
-    # and convert back to hash
+    # to_h converts back to hash
     @roster.map do |grade, names|
       [grade, names.sort]
     end.to_h
